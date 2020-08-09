@@ -24,7 +24,7 @@ y <- rbind(y.train, y.test)
 
 # 2. Extracts only the measurements on the mean and standard deviation for each measurement.
 features <- read.table("./UCI HAR Dataset/features.txt")
-mean.sd.cols <- grep("-mean\\(\\) | -std\\(\\)", features[, 2])
+mean.sd.cols <- grep("(.*)mean[^F]|std(.*)", features[, 2])
 x.mean.sd <- x[, mean.sd.cols]
 
 # 3. Uses descriptive activity names to name the activities in the data set.
