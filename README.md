@@ -22,3 +22,6 @@ You should also include a ``README.md`` in the repo with your scripts. This repo
 5. After that, **x**, **y** and **subject** data sets are merged. Then, it is exported as *txt* file into the project's folder (Getting-and-Cleaning-Data) in the same working directory, named **merged.txt**.
 6. A separate tidy data set is created containing the *mean* of activities and subjects, which is exported as *txt* file into the project's folder (Getting-and-Cleaning-Data), named **meandataset.txt**.
 On steps 5 and 6, it is used the ``str`` function to preview the data sets.
+
+## Reference
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012 (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
