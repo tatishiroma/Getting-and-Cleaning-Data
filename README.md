@@ -1,5 +1,4 @@
 # Getting and Cleaning Data Course Project
-## Purpose
 The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set.The goal is to prepare tidy data that can be used for later analysis. You will be required to submit:
 1. a tidy data set as described below;
 2. a link to a GitHub repository with your script for performing the analysis, and;
@@ -15,13 +14,14 @@ You should also include a ``README.md`` in the repo with your scripts. This repo
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ## run_analysis.R
-1. It downloads the **UCI HAR Dataset** data set and puts the zip file in your working directory. Then, it unzips the file into the UCI HAR Dataset folder.
-2. It loads the **train** and **test** data sets and merges both of them into one data frame, using the function ``rbind``.
-3. It extracts just the *mean* and *standard deviation* from the **features** data set, using the function ``grep``. Then, these are applied to the **x** data frame.
-4. It loads **activities** data set and converts all the characters to lower case using ``tolower`` and removes underscore using ``gsub``. *activity* and *subject* column names are named for **y** and **subject** data sets, respectively.
-5. After that, **x**, **y** and **subject** data sets are merged. Then, it is exported as *txt* file into the project's folder (Getting-and-Cleaning-Data) in the same working directory, named **merged.txt**.
-6. A separate tidy data set is created containing the *mean* of activities and subjects, which is exported as *txt* file into the project's folder (Getting-and-Cleaning-Data), named **meandataset.txt**.
-On steps 5 and 6, it is used the ``str`` function to preview the data sets.
+1. The **UCI HAR Dataset** data set is downloaded and placed in zip file in your working directory. Then, the file is unziped into the UCI HAR Dataset folder.
+2. The **train** and **test** data sets were merged into one data frame, using the function ``rbind``.
+3. The *mean* and *standard deviation* from the **features** data set were extracted using the function ``grep``. Then, it was applied to the **x** data frame.
+4. The characters of **activities** data set were all converted to lower case using ``tolower`` and underscore removed using ``gsub``. *activity* and *subject* column names are named for **y** and **subject** data sets, respectively.
+5. Finally, **x**, **y** and **subject** data sets were merged. Then, it was exported as *txt* file into the project's folder (Getting-and-Cleaning-Data) in the same working directory, named **merged.txt**.
+6. A separate tidy data set was created containing the *mean* of activities and subjects, which is exported as *txt* file into the project's folder (Getting-and-Cleaning-Data), named **meandataset.txt**.
+
+On steps 5 and 6, it was used the ``str`` function to preview the final outputs.
 
 ## Reference
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012 (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
