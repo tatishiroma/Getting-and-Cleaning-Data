@@ -37,10 +37,10 @@ activities[, 2] <- tolower(as.character(activities[, 2]))
 activities[, 2] <- gsub("_", "", activities[, 2])
 
 y[, 1] = activities[y[, 1], 2]
-colnames(y) <- "activity"
-colnames(subject) <- "subject"
 
 # 4. Appropriately labels the data set with descriptive variable names.
+colnames(y) <- "activity"
+colnames(subject) <- "subject"
 data <- cbind(subject, x.mean.sd, y)
 str(data)
 write.table(data, "./Getting-and-Cleaning-Data/merged.txt", row.names = FALSE)
